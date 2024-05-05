@@ -78,6 +78,10 @@ function takeCommand(message) {
         window.open('Calculator:///');
         const finalText = "Opening Calculator";
         speak(finalText);
+    }  else if (message.includes('spotify')) {
+        window.open('Spotify:///');
+        const finalText = "Opening Spotify";
+        speak(finalText);
     } else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
